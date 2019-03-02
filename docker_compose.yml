@@ -1,0 +1,9 @@
+version: "3"
+services:
+  postgresql:
+    image: thajeztah/pgadmin4
+    ports:
+      - "5050:5050"
+    volumes:
+      - "./config:/pgadmin/config/"
+      - "./storage:/pgadmin/storage/"
